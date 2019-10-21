@@ -36,10 +36,10 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 | ------ | -------------- | ------------------ | ------------------- |
 | BiGRU&BiLSTM+glove | 0.98977 | 0.98333 | 0.98308 |
 | BiGRU&BiLSTM+glove+preprocess | 0.99018 | 0.98397 | 0.98385 |
-| BiGRU&BiLSTM+glove+preprocess(*) | | 0.98538 | 0.98497 |
+| BiGRU&BiLSTM+glove+preprocess(\*) | | 0.98538 | 0.98497 |
 | BiGRU&BiLSTM+fasttext | 0.98982 | 0.98360 | 0.98309 |
 | BiGRU&BiLSTM+fasttext+preprocess | 0.99042 | 0.98496 | 0.98468 |
-| BiGRU&BiLSTM+fasttext+preprocess(*) | | 0.98551 | 0.98522 |
+| BiGRU&BiLSTM+fasttext+preprocess(\*) | | 0.98551 | 0.98522 |
 
 
 - [MultiBiRNN](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN.ipynb)
@@ -49,20 +49,21 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 | ------ | -------------- | ------------------ | ------------------- |
 | MultiBiGRU+glove | 0.98949 | 0.98369 | 0.98280 |
 | MultiBiGRU+glove+preprocess | 0.99059 | 0.98464 | 0.98388 |
-| MultiBiGRU+glove+preprocess(*) | | 0.98555 | 0.98498 |
+| MultiBiGRU+glove+preprocess(\*) | | 0.98555 | 0.98498 |
 | MultiBiGRU+fasttext | 0.98986 | 0.98327 | 0.98301 |
 | MultiBiGRU+fasttext+preprocess | 0.98930 | 0.98397 | 0.98362 |
-| MultiBiGRU+fasttext+preprocess(*) | | 0.98565 | 0.98528 |
+| MultiBiGRU+fasttext+preprocess(\*) | | 0.98565 | 0.98528 |
 | MultiBiLSTM+glove | 0.98955 | 0.98222 | 0.98246 |
 | MultiBiLSTM+glove+preprocess | 0.99040 | 0.98445 | 0.98356 |
-| MultiBiLSTM+glove+preprocess(*) | | 0.98557 | 0.98507 |
+| MultiBiLSTM+glove+preprocess(\*) | | 0.98557 | 0.98507 |
 | MultiBiLSTM+fasttext | 0.99019 | 0.98426 | 0.98326 |
 | MultiBiLSTM+fasttext+preprocess | 0.99040 | 0.98522 | 0.98493 |
-| MultiBiLSTM+fasttext+preprocess(*) | | 0.98581 | 0.98539 |
+| MultiBiLSTM+fasttext+preprocess(\*) | | 0.98581 | 0.98539 |
 
 
 - Combine different models
 
 | models | public leaderboard | private leaderboard |
 | ------ | ------------------ | ------------------- |
-| BiGRU&BiLSTM(*) + MultiBiRNN(*) | 0.98601 | 0.98566 |
+| BiGRU&BiLSTM + MultiBiRNN | 0.98574 | 0.98554 |
+| BiGRU&BiLSTM(\*) + MultiBiRNN(\*) | 0.98601 | 0.98566 |
