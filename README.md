@@ -37,7 +37,6 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 | BiGRU&BiLSTM+glove+preprocess(\*) | | 0.98597 | 0.98536 |
 | BiGRU&BiLSTM+fasttext+preprocess(\*) | | 0.98600 | 0.98536 |
 
-
 - [MultiBiGRU](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN_GRU.ipynb),
 [MultiBiLSTM](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN_LSTM.ipynb),
 [MultiBiLSTM_GRU](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN_GRU_LSTM.ipynb)
@@ -56,6 +55,6 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 
 | models | public leaderboard | private leaderboard |
 | ------ | ------------------ | ------------------- |
-| BiGRU&BiLSTM(\*) | | 0.98606 | 0.98545 |
-| MultiBiRNN(\*) | | 0.98644 | 0.98598 |
-| BiGRU&BiLSTM(\*)+MultiBiRNN(\*) | | 0.98649 | 0.98595 |
+| BiGRU&BiLSTM(\*) | 0.98606 | 0.98545 |
+| MultiBiRNN(\*) | 0.98644 | 0.98598 |
+| BiGRU&BiLSTM(\*)+MultiBiRNN(\*) | 0.98649 | 0.98595 |
