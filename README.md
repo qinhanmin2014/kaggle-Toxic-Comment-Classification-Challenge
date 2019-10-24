@@ -29,41 +29,33 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 | LSTM+glove | 0.98884 | 0.98191 | 0.98157 |
 | LSTM+fasttext | 0.98908 | 0.98222 | 0.98128 |
 
-- [BiGRU&BiLSTM](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version4_BiGRU%26BiLSTM.ipynb)
+- [BiGRU&BiLSTM](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version4_BiGRU_BiLSTM.ipynb)
 (* means repeat the program 5 times and take the average)
 
 | method | validation set | public leaderboard | private leaderboard |
 | ------ | -------------- | ------------------ | ------------------- |
-| BiGRU&BiLSTM+glove | 0.98977 | 0.98333 | 0.98308 |
-| BiGRU&BiLSTM+glove+preprocess | 0.99018 | 0.98397 | 0.98385 |
-| BiGRU&BiLSTM+glove+preprocess(\*) | | 0.98538 | 0.98497 |
-| BiGRU&BiLSTM+fasttext | 0.98982 | 0.98360 | 0.98309 |
-| BiGRU&BiLSTM+fasttext+preprocess | 0.99042 | 0.98496 | 0.98468 |
-| BiGRU&BiLSTM+fasttext+preprocess(\*) | | 0.98551 | 0.98522 |
+| BiGRU&BiLSTM+glove+preprocess(\*) | | 0.98597 | 0.98536 |
+| BiGRU&BiLSTM+fasttext+preprocess(\*) | | 0.98600 | 0.98536 |
 
 
-- [MultiBiRNN](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN.ipynb)
+- [MultiBiGRU](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN_GRU.ipynb),
+[MultiBiLSTM](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN_LSTM.ipynb),
+[MultiBiLSTM_GRU](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN_GRU_LSTM.ipynb)
 (* means repeat the program 5 times and take the average)
 
 | method | validation set | public leaderboard | private leaderboard |
 | ------ | -------------- | ------------------ | ------------------- |
-| MultiBiGRU+glove | 0.98949 | 0.98369 | 0.98280 |
-| MultiBiGRU+glove+preprocess | 0.99059 | 0.98464 | 0.98388 |
-| MultiBiGRU+glove+preprocess(\*) | | 0.98555 | 0.98498 |
-| MultiBiGRU+fasttext | 0.98986 | 0.98327 | 0.98301 |
-| MultiBiGRU+fasttext+preprocess | 0.98930 | 0.98397 | 0.98362 |
-| MultiBiGRU+fasttext+preprocess(\*) | | 0.98565 | 0.98528 |
-| MultiBiLSTM+glove | 0.98955 | 0.98222 | 0.98246 |
-| MultiBiLSTM+glove+preprocess | 0.99040 | 0.98445 | 0.98356 |
-| MultiBiLSTM+glove+preprocess(\*) | | 0.98557 | 0.98507 |
-| MultiBiLSTM+fasttext | 0.99019 | 0.98426 | 0.98326 |
-| MultiBiLSTM+fasttext+preprocess | 0.99040 | 0.98522 | 0.98493 |
-| MultiBiLSTM+fasttext+preprocess(\*) | | 0.98581 | 0.98539 |
-
+| MultiBiGRU+glove+preprocess(\*) | | 0.98610 | 0.98534 |
+| MultiBiGRU+fasttext+preprocess(\*) | | 0.98607 | 0.98575 |
+| MultiBiLSTM+glove+preprocess(\*) | | 0.98600 | 0.98518 |
+| MultiBiLSTM+fasttext+preprocess(\*) | | 0.98608 | 0.98540 |
+| MultiBiLSTM_GRU+glove+preprocess(\*) | | 0.98503 | 0.98508 |
+| MultiBiLSTM_GRU+fasttext+preprocess(\*) | | 0.98624 | 0.98561 |
 
 - Combine different models
 
 | models | public leaderboard | private leaderboard |
 | ------ | ------------------ | ------------------- |
-| BiGRU&BiLSTM + MultiBiRNN | 0.98574 | 0.98554 |
-| BiGRU&BiLSTM(\*) + MultiBiRNN(\*) | 0.98601 | 0.98566 |
+| BiGRU&BiLSTM(\*) | | 0.98606 | 0.98545 |
+| MultiBiRNN(\*) | | 0.98644 | 0.98598 |
+| BiGRU&BiLSTM(\*)+MultiBiRNN(\*) | | 0.98649 | 0.98595 |
