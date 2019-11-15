@@ -2,6 +2,17 @@
 
 https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 
+### Steps to reproduce
+
+- Download the dataset from Kaggle and put it in data/
+- run toxic-data-preprocessing.py (data preprocessing)
+- run version5_*.ipynb (MultiBiGRU models)
+- run version6_*.ipynb (CNN models)
+- run model_blending.ipynb (model blending)
+- public leaderboard 0.98709 (325/4544), private leaderboard 0.98677 (174/4544)
+
+### Experiments
+
 - [TFIDF](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version1_TFIDF.ipynb)
 
 | method | cv score | public leaderboard | private leaderboard |
@@ -37,24 +48,30 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 | BiGRU&BiLSTM+glove+preprocess(\*) | | 0.98597 | 0.98536 |
 | BiGRU&BiLSTM+fasttext+preprocess(\*) | | 0.98600 | 0.98536 |
 
-- [MultiBiGRU](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN_GRU.ipynb),
-[MultiBiLSTM](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN_LSTM.ipynb),
-[MultiBiLSTM_GRU](https://nbviewer.jupyter.org/github/qinhanmin2014/kaggle-Toxic-Comment-Classification-Challenge/blob/master/version5_MultiBiRNN_GRU_LSTM.ipynb)
-(* means repeat the program 5 times and take the average)
+- MultiBiGRU
 
 | method | validation set | public leaderboard | private leaderboard |
 | ------ | -------------- | ------------------ | ------------------- |
-| MultiBiGRU+glove+preprocess(\*) | | 0.98610 | 0.98534 |
-| MultiBiGRU+fasttext+preprocess(\*) | | 0.98607 | 0.98575 |
-| MultiBiLSTM+glove+preprocess(\*) | | 0.98600 | 0.98518 |
-| MultiBiLSTM+fasttext+preprocess(\*) | | 0.98608 | 0.98540 |
-| MultiBiLSTM_GRU+glove+preprocess(\*) | | 0.98503 | 0.98508 |
-| MultiBiLSTM_GRU+fasttext+preprocess(\*) | | 0.98624 | 0.98561 |
+| MultiBiGRU+glove+preprocess+KFold | | 0.98604 | 0.98553 |
+| MultiBiGRU+fasttext+preprocess+KFold | | 0.98634 | 0.98597 |
+| MultiBiGRU+char+preprocess+KFold | | 0.98171 | 0.98119 |
+
+- CNN
+
+| method | validation set | public leaderboard | private leaderboard |
+| ------ | -------------- | ------------------ | ------------------- |
+| CNN+glove+preprocess+KFold | | 0.98550 | 0.98449 |
+| CNN+fasttext+preprocess+KFold | | 0.98569 | 0.98517 |
+| CNN+char+preprocess+KFold | | 0.97447 | 0.97345 | 
 
 - Combine different models
 
 | models | public leaderboard | private leaderboard |
 | ------ | ------------------ | ------------------- |
-| BiGRU&BiLSTM(\*) | 0.98606 | 0.98545 |
-| MultiBiRNN(\*) | 0.98644 | 0.98598 |
-| BiGRU&BiLSTM(\*)+MultiBiRNN(\*) | 0.98649 | 0.98595 |
+| MultiBiGRU++CNN | | 0.98652 | 0.98606 |
+| MultiBiGRU+MultiBiGRU(char)+CNN | | 0.98687 | 0.98655 |
+| MultiBiGRU+MultiBiGRU(char)+CNN (weighted ensemble) | | 0.98709 | 0.98677 |
+
+### References
+
+- https://github.com/zake7749/DeepToxic
