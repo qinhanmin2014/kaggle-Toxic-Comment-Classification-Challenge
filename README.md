@@ -68,9 +68,9 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 
 | models | public leaderboard | private leaderboard |
 | ------ | ------------------ | ------------------- |
-| MultiBiGRU++CNN | | 0.98652 | 0.98606 |
-| MultiBiGRU+MultiBiGRU(char)+CNN | | 0.98687 | 0.98655 |
-| MultiBiGRU+MultiBiGRU(char)+CNN (weighted ensemble) | | 0.98709 | 0.98677 |
+| MultiBiGRU++CNN | 0.98652 | 0.98606 |
+| MultiBiGRU+MultiBiGRU(char)+CNN | 0.98687 | 0.98655 |
+| MultiBiGRU+MultiBiGRU(char)+CNN (weighted ensemble) | 0.98709 | 0.98677 |
 
 ### References
 
