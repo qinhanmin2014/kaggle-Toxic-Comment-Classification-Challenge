@@ -5,6 +5,7 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 ### Steps to reproduce
 
 - Download the dataset from Kaggle and put it in data/
+- Tensorflow 1.13.2, Keras 2.2.4
 - run toxic-data-preprocessing.py (data preprocessing)
 - run version5_*.ipynb (MultiBiGRU models)
 - run version6_*.ipynb (CNN models)
