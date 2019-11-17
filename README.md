@@ -63,7 +63,7 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 | ------ | -------------- | ------------------ | ------------------- |
 | CNN+glove+preprocess+KFold | | 0.98550 | 0.98449 |
 | CNN+fasttext+preprocess+KFold | | 0.98569 | 0.98517 |
-| CNN+char+preprocess+KFold | | 0.97447 | 0.97345 | 
+| CNN+char+preprocess+KFold | | 0.97419 | 0.97256 | 
 
 - Combine different models
 
