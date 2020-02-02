@@ -73,6 +73,12 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 | MultiBiGRU+MultiBiGRU(char)+CNN | 0.98687 | 0.98655 |
 | MultiBiGRU+MultiBiGRU(char)+CNN (weighted ensemble) | 0.98709 | 0.98677 |
 
+### Solution based on bert
+
+| method | validation set | public leaderboard | private leaderboard |
+| ------ | -------------- | ------------------ | ------------------- |
+| bert-based-uncased+preprocess | 0.9907 | 0.98464 | 0.98452 |
+
 ### References
 
 - https://github.com/zake7749/DeepToxic
