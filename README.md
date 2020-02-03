@@ -2,7 +2,19 @@
 
 https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 
-### Steps to reproduce
+### Steps to reproduce (RNN + CNN + bert)
+
+- Download the dataset from Kaggle and put it in data/
+- Tensorflow 1.13.2, Keras 2.2.4
+- run toxic-data-preprocessing.py (data preprocessing)
+- run version5_*.ipynb (MultiBiGRU models)
+- run version6_*.ipynb (CNN models)
+- run model_blending.ipynb (model blending)
+- run version7_bert.py (bert models)
+- run model_blending_2.ipynb (model blending)
+- public leaderboard 0.98770 (29/4544), private leaderboard 0.98747 (15/4544)
+
+### Steps to reproduce (RNN + CNN)
 
 - Download the dataset from Kaggle and put it in data/
 - Tensorflow 1.13.2, Keras 2.2.4
@@ -79,9 +91,12 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 | ------ | -------------- | ------------------ | ------------------- |
 | bert-based-uncased+preprocess | | 0.98653 | 0.98660 |
 
-- Combine bert with the best solution above
+- Combine bert (sub2) with the best solution above (sub1)
 
-public leaderboard: 0.98686 private leaderboard: 0.98690
+| models | public leaderboard | private leaderboard |
+| ------ | ------------------ | ------------------- |
+| 0.5 * sub1 + 0.5 * sub2 | 0.98686 | 0.98690 |
+| 0.9 * sub1 + 0.1 * sub2 | 0.98770 | 0.98747 |
 
 ### References
 
