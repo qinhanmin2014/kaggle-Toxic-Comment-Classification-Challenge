@@ -77,7 +77,11 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 
 | method | validation set | public leaderboard | private leaderboard |
 | ------ | -------------- | ------------------ | ------------------- |
-| bert-based-uncased+preprocess | 0.9907 | 0.98464 | 0.98452 |
+| bert-based-uncased+preprocess | | 0.98653 | 0.98660 |
+
+- Combine bert with the best solution above
+
+public leaderboard: 0.98686 private leaderboard: 0.98690
 
 ### References
 
