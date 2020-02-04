@@ -169,7 +169,7 @@ for i in range(NUM_MODELS):
         ]
     optimizer = AdamW(optimizer_grouped_parameters)
     scheduler = get_linear_schedule_with_warmup(
-                    optimizer, num_warmup_steps=0,
+                    optimizer, num_warmup_steps=int(len(train_loader) * 0.5),
                     num_training_steps=len(train_loader) * NUM_EPOCHS)
     total_step = len(train_loader)
     best_score = -np.inf
@@ -226,4 +226,4 @@ for i in range(NUM_MODELS):
 pred /= NUM_MODELS
 submission = pd.read_csv("data/sample_submission.csv")
 submission[classes] = pred
-submission.to_csv("submission/v7_bert_3.csv.gz", compression="gzip", index=False)
+submission.to_csv("submission/v7_bert.csv.gz", compression="gzip", index=False)

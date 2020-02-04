@@ -89,14 +89,14 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 
 | method | validation set | public leaderboard | private leaderboard |
 | ------ | -------------- | ------------------ | ------------------- |
-| bert-based-uncased+preprocess | | 0.98653 | 0.98660 |
+| bert-based-uncased+preprocess | | 0.98634 | 0.98682 |
 
 - Combine bert (sub2) with the best solution above (sub1)
 
 | models | public leaderboard | private leaderboard |
 | ------ | ------------------ | ------------------- |
-| 0.5 * sub1 + 0.5 * sub2 | 0.98686 | 0.98690 |
-| 0.9 * sub1 + 0.1 * sub2 | 0.98770 | 0.98747 |
+| 0.5 * sub1 + 0.5 * sub2 | 0.98669 | 0.98712 |
+| 0.9 * sub1 + 0.1 * sub2 | 0.98751 | 0.98763 |
 
 ### References
 
