@@ -12,7 +12,7 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 - run model_blending.ipynb (model blending)
 - run version7_bert.py (bert models)
 - run model_blending_2.ipynb (model blending)
-- public leaderboard 0.98770 (29/4544), private leaderboard 0.98747 (15/4544)
+- public leaderboard 0.98751 (68/4544), private leaderboard 0.98763 (14/4544)
 
 ### Steps to reproduce (RNN + CNN)
 
