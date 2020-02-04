@@ -169,7 +169,7 @@ for i in range(NUM_MODELS):
         ]
     optimizer = AdamW(optimizer_grouped_parameters)
     scheduler = get_linear_schedule_with_warmup(
-                    optimizer, num_warmup_steps=int(len(train_loader) * 0.5),
+                    optimizer, num_warmup_steps=0,
                     num_training_steps=len(train_loader) * NUM_EPOCHS)
     total_step = len(train_loader)
     best_score = -np.inf
